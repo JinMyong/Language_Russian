@@ -38,8 +38,8 @@ void SocialGame::sendemailWithScreenShot(const char* filePath, const char* mailB
 
 void SocialGame::rategame()
 {
-    [Appirater setAppId:@"1094448987"];
-    [Appirater setDaysUntilPrompt:2];
+    [Appirater setAppId:@"1101090318"];
+    [Appirater setDaysUntilPrompt:3];
     [Appirater setUsesUntilPrompt:5];
     [Appirater setSignificantEventsUntilPrompt:-1];
     [Appirater setTimeBeforeReminding:0];

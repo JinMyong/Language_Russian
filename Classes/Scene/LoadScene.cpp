@@ -14,6 +14,12 @@
 #include "MainMenuScene.hpp"
 #include "SoundEffects.hpp"
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+#include "SocialGame.h"
+#elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#include "platform/android/jni/JniHelper.h"
+#endif
+
 using namespace CocosDenshion;
 using namespace std;
 
@@ -58,12 +64,6 @@ void LoadScene::createUI()
     title->setScale(SCALE);
     title->setPosition(ccp(winSize.width * 0.5, 970 * SCALEY));
     this->addChild(title);
-    
-    // Removed by kerberos
-//    CCLabelTTF* testLabel = CCLabelTTF::create("ا", "fonts/printArabic.ttf", 100);
-//    testLabel->setPosition(ccp(320 * SCALEX, 320 * SCALEY));
-//    testLabel->setColor(ccBLACK);
-//    this->addChild(testLabel);
     
     spLoadingProgress = CCSprite::create(getResPath("images/loadScene/loading_progress.png"));
     spLoadingProgress->setScaleY(SCALEY);
@@ -218,5 +218,10 @@ void LoadScene::onLoad(cocos2d::CCObject *sender)
 
 void LoadScene::onFinishLoad(cocos2d::CCObject *sender)
 {
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    SocialGame::rategame();
+#elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+    
+#endif
     CCDirector::sharedDirector()->replaceScene(CCTransitionFade::create(0.5f, MainMenuScene::scene()));
 }

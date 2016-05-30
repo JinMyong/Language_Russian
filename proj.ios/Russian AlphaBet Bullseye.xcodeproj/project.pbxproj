@@ -423,9 +423,9 @@
 		27FE16181CF215D100B5B242 /* bg_music_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27FE152A1CF215D100B5B242 /* bg_music_1.mp3 */; };
 		27FE16191CF215D100B5B242 /* bg_music_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27FE152B1CF215D100B5B242 /* bg_music_2.mp3 */; };
 		27FE161A1CF215D100B5B242 /* bg_music_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27FE152C1CF215D100B5B242 /* bg_music_3.mp3 */; };
-		27FE16641CF2167700B5B242 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE16621CF2167700B5B242 /* Appirater.m */; };
+		27FE16641CF2167700B5B242 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE16621CF2167700B5B242 /* Appirater.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		27FE16661CF2171100B5B242 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE16651CF2171100B5B242 /* MessageUI.framework */; };
-		27FE16681CF2172500B5B242 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE16671CF2172500B5B242 /* StoreKit.framework */; };
+		27FE16681CF2172500B5B242 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE16671CF2172500B5B242 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		27FE166A1CF2173200B5B242 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE16691CF2173200B5B242 /* CFNetwork.framework */; };
 		27FE166C1CF2173B00B5B242 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE166B1CF2173B00B5B242 /* SystemConfiguration.framework */; };
 		27FE166E1CF2182700B5B242 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FE166D1CF2182700B5B242 /* Images.xcassets */; };
@@ -3606,8 +3606,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Avram Mandell (7MR46WRS5Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Avram Mandell (7MR46WRS5Z)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3659,8 +3659,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Avram Mandell (M76XMZYZG7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Avram Mandell (M76XMZYZG7)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;

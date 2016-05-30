@@ -21,11 +21,7 @@
 
 #include "GameResultScene.hpp"
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-#include "SocialGame.h"
-#elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-#include "platform/android/jni/JniHelper.h"
-#endif
+
 
 
 CCScene* MainMenuScene::scene()
@@ -62,13 +58,7 @@ bool MainMenuScene::init()
     }
     
     SoundEffects::getInstance()->playThemeBackgroundMusic();
-    CCString* emailtext = CCString::createWithFormat("%s\n%s", EMAIL_TEXT_FRIEND, ANDROID_URL);
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    SocialGame::rategame();
-#elif (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    
-#endif
-    
+
     return true;
 }
 
